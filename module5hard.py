@@ -81,7 +81,8 @@ class UrTube:
                 for second in range(video.time_now, video.duration):
                     print(f'{second + 1}', end=' ')
                     time.sleep(1)
-                    video.time_now += 1
+
+                video.time_now = 0
                 print("Конец видео")
 
 
